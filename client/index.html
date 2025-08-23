@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Juego en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="main-title">Clicker master</h1>
+    <div id="user-info" style="display:none; position:absolute; top:20px; left:20px; text-align:left; font-size:1.5em; color:#fff;"></div>
+    <div id="user-points" style="display:none; position:absolute; top:60px; left:20px; text-align:left; font-size:1.2em; color:#fff;">Puntos: 0</div>
+    <div id="ranking" style="display:none; position:absolute; top:20px; right:20px; width:220px; background:rgba(0,0,0,0.7); color:#fff; border-radius:10px; padding:10px; font-size:1em;">
+        <button id="ranking-toggle" style="display:none; position:fixed; top:20px; right:20px; width:48px; height:48px; background:#ff4b6e; color:#fff; border:none; border-radius:50%; padding:0; font-size:2em; cursor:pointer; z-index:1001; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+            &#9776;
+        </button>
+        <div id="ranking-content">
+            <h3 style="margin-top:0;">Mejores jugadores</h3>
+            <ul id="ranking-list" style="list-style:none; padding-left:0; margin:0;"></ul>
+        </div>
+    </div>
+    <div id="block-container" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);">
+        <div id="block-healthbar" style="width:120px; height:16px; background:#333; border-radius:8px; margin-bottom:8px; position:relative;">
+            <div id="block-health" style="height:100%; width:100%; background:#4bff6e; border-radius:8px; transition:width 0.2s;"></div>
+        </div>
+        <img id="block" src="assets/img/level1.png" alt="Bloque" width="120" height="120" style="cursor:pointer; user-select:none;">
+    </div>
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

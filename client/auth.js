@@ -4,7 +4,7 @@ authContainer.id = 'auth-container';
 authContainer.innerHTML = `
   <div class="auth-card">
     <div id="register-section">
-      <h2>Registrarse</h2>
+      <h2>Registrarseee</h2>
       <input type="text" id="register-username" placeholder="Usuario" class="auth-input"><br>
       <input type="password" id="register-password" placeholder="Contraseña" class="auth-input"><br>
       <button id="register-btn" class="auth-btn">Registrarse</button>
